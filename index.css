@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.outsideContainer{
+    width:100%;
+    min-height: 100vh;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 8%, rgba(9,9,121,1) 49%, rgba(0,155,255,0.9136904761904762) 74%);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+div>h1{
+    color:aliceblue;
+    padding-bottom: 70vh;
+    /* padding-left: 50vh; */
+
+    text-align: center;
+
+}
+.todo-app{
+    width:100%;
+    max-width: 600px;
+    margin: 100px auto 30x;
+    padding:40px;
+    background: white;
+    border-radius: 50px;;
+}
+.todo-app h2{
+    color: rgb(4, 4, 110);
+    display:flex;
+    align-items: center;
+    /* justify-content: center; */
+
+}
+.todo-app h2 img{
+    width:40px;
+    margin-left:10px;
+}
+
+button{
+    border: none;
+    outline: none;
+    padding: 16px 40px;
+    background: rgb(238, 9, 85);
+    color: rgb(242, 239, 239);
+    font-size: 1rem;
+}
+.input-border1{
+    border-radius: 60px;
+}
+
+.input-border2{
+    border-radius: 55px;
+}
+.input-border2:hover{
+    background: rgb(4, 142, 4);
+    color:white
+}
+.box{
+    display:flex;
+    align-items: center;
+    justify-content:flex-start;
+    background: rgb(188, 186, 186);
+    border-radius: 35px;
+    padding-left: 20px;
+}
+input{
+    flex: 1;
+    border:none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+ul li{
+    font-size: 16px;
+    list-style: none;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    user-select: none;
+    cursor: pointer;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin-right: 20px;
+    top: 12px;
+    left:8px;
+}
+ul li.check{
+    color:black;
+    
+}
+ul li.check::before{
+    background-image: url(images/checked.png);;
+}
+ul li span{
+    position: absolute;
+    right:0;
+    top:5px;
+    background-color: rgb(249, 245, 140);
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   height:40px;
+   width:40px;
+   border-radius: 50%;
+}
+ul li span>img{
+    
+    height:15px;
+    width:15px;
+}
